@@ -1,0 +1,873 @@
+#page_container {
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+#page_container.fade-out, #main_title.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+#page_container.blured {
+  opacity: .7;
+}
+
+.clickable {
+  transition: all 0.5s ease 0s;
+}
+
+.overview-row {
+  min-height: 100vh;
+  color: #fff;
+  background: radial-gradient(transparent, #402E22);
+  background-image: url('../../img/overview.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.overview-box {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2vh;
+  letter-spacing: 0.1em;
+  line-height: 4vh;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+@media (orientation: portrait) {
+  .overview-box span:nth-of-type(2) {
+    display: block;
+  }
+}
+
+#main_title {
+  opacity: 1;
+  transition: 3s opacity;
+  font-weight: 900;
+  font-size: 5.6em;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+#restaurant_label {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+#book_butt {
+  font-size: inherit;
+  margin-top: 1.3em;
+  border-width: .1em;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#book_butt:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#down_arrow {
+  margin-top: 6vh;
+  font-size: 2em;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* Phone - landscape */
+@media (max-width: 720px) and (orientation:landscape) {
+  .overview-box {
+    font-size: 3vh;
+  }
+
+  #book_butt {
+    margin-top: .5em;
+  }
+
+  #down_arrow {
+    margin-top: 3vh;
+  }
+}
+
+/* Laptop */
+@media (min-width: 721px) and (orientation:landscape) {
+  .overview-box {
+    font-size: 2.5vh;
+    margin-top: 7vh;
+    line-height: 4.5vh;
+  }
+
+  #main_title {
+    font-size: 6em;
+  }
+
+  #book_butt {
+    font-size: 2vh;
+  }
+
+  #down_arrow {
+    margin-top: 10vh;
+  }
+}
+
+/* ABOUT SECTION AND CAROUSEL CSS*/
+#about_section {
+  min-height: 100vh;
+  color: #fff;
+}
+
+#about_col {
+  min-height: 50vh;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 8% 5vh;
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .9);
+}
+
+.about-text {
+  width: 75%;
+}
+
+.slideshow-row {
+  height: inherit;
+  width: 100%;
+}
+
+.carousel {
+  padding: 0px;
+  margin: 0px;
+}
+
+.carousel img {
+  object-fit: cover;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+}
+
+/* Devices smaller than 320px width */
+@media (max-width: 320px){
+  #about_text_box .section-title {
+    font-size: 1.6em;
+  }
+
+  #about_text_box .section-text {
+    font-size: 1.1em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (min-width: 321px) and (max-width: 480px) {
+  #about_text_box .section-title {
+    font-size: 1.6em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 481px) and (max-width: 736px) and (orientation: landscape){
+  #about_text_box .section-title {
+    font-size: 1.3em;
+  }
+
+  #about_text_box .section-text {
+    font-size: 1em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+    height: auto;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) and (orientation: portrait){
+  #about_text_box .section-title {
+    font-size: 2em;
+  }
+
+  #about_text_box .section-text {
+    font-size: 1.3em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+
+@media (min-width: 737px) and (max-width: 767px)  {
+  #about_text_box .section-title {
+    font-size: 2em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  #about_text_box .section-title {
+    font-size: 2.5em;
+  }
+
+  #about_text_box {
+    margin: 2.5em 5em;
+  }
+
+  #about_section {
+    display: table;
+  }
+
+  #about_col {
+    display: table-footer-group;
+  }
+
+  #carousel_col {
+    display: table-header-group;
+    float: none;
+  }
+
+  #carousel_row {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/*Landscape tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #about_text_box .section-title {
+      font-size: 1.7em;
+    }
+
+    #about_text_box .section-text {
+      font-size: 1.3em;
+    }
+
+    #about_section {
+      display: flex;
+    }
+
+    #carouse_row {
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .carousel img {
+      min-height: 100vh;
+    }
+
+    #about_text_box {
+      margin: 0;
+    }
+  }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  #about_text_box .section-title {
+    font-size: 2em;
+  }
+
+  #about_text_box .section-text {
+    font-size: 1.3em;
+  }
+
+  #about_section   {
+    display: flex;
+  }
+
+  #carousel_row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .carousel img {
+    min-height: 100vh;
+  }
+
+  #about_text_box {
+    margin: 0;
+  }
+}
+}
+/* END OF ABOUT + CAROUSEL CSS*/
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.section-title:after {
+  display:block;
+  clear:both;
+  content : "";
+  position: relative;
+  left    : 0;
+  bottom  : 0;
+  max-width:2.2em;
+  height  : 1px;
+  width   : 50%;
+  border-bottom:2px solid white;
+  margin:0 auto;
+  padding:15px 0px;
+}
+
+.menu-category-name {
+  font-family: 'Playball', cursive;
+  font-weight: 500;
+  font-size: 6vh;
+}
+
+#red_wine, #white_wine, #rose_wine {
+  text-align: center;
+}
+
+
+@media(min-width:992px) {
+  #red_wine, #cocktails_ro {
+    border-right: 1px solid #ccc;
+  }
+}
+
+#cocktail_section, #food_section, #wine_section {
+  display: none;
+  padding:50px;
+}
+
+.drink-item {
+  padding-top: 4%;
+  width: 100%;
+  padding-left: 9%;
+}
+
+.beer-item {
+    width:100%;
+    padding-left: 9%;
+    padding-top:1.5%;;
+}
+
+#bottle_beers {
+    padding-top:4%;
+}
+
+.cocktail-name {
+    text-transform: uppercase;
+}
+
+.drink-type{
+    font-family: 'Playball', cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.drink-name {
+  margin: 0px;
+  font-size: 18px;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  text-align: left;
+  float: left;
+}
+
+.drink-price {
+  font-family: 'Khand';
+  font-size:18px;
+  display: inline;
+  vertical-align: top;
+  line-height: 28px;
+  float: right;
+}
+
+@media(min-width: 768px){
+    .drink-name, .drink-price {
+        font-size:20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .drink-name, .drink-price {
+        font-size:20px;
+    }
+    .beer-item{
+        width:110%;
+    }
+}
+
+@media(min-width:1200px) {
+    .drink-name, .drink-price {
+        font-size:20px;
+    }
+
+    .cocktails-row {
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    #red_wine, #white_wine {
+        padding-left:50px;
+        padding-right:50px;
+    }
+}
+
+.drink-description {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size:13px;
+  color: #938372;
+  float: left;
+  text-align: left;
+}
+
+.sb-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+#logo {
+  text-align:center;
+}
+
+#sb_logo_div {
+  padding: 13% 0 0 0;
+}
+
+.drink-item .drink-name {
+  display: inline-block;
+  padding-right: 10px;
+  max-width: 75%;
+  margin: 0 0 15px;
+}
+
+.drink-item .drink-price {
+  padding-left: 10px;
+  right: 0;
+  position: absolute;
+}
+
+#rose_wine div {
+  padding-top: 0px;
+}
+
+#rose {
+  margin: 0px;
+  padding: .3em 0 .7em 0;
+}
+
+#menu_row {
+  min-height: 100vh;
+  color: #fff;
+}
+
+#menu_img_col {
+  min-height: 50vh;
+  background-image: url('../../img/menu.jpg');
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu_overview_col {
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 8% 5vh;
+  background: radial-gradient(transparent, #402E22);
+  background-color:  rgba(120, 86, 64, .9);
+}
+
+@media only screen and (min-width: 768px) {
+    #menu_img_col, #menu_overview_col {
+      min-height: inherit;
+    }
+}
+
+.section-text {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2.9vh;
+  line-height: 1.3333em;
+  margin: 1.4em auto;
+}
+
+#menu_buttons > a {
+  margin: 1.3em .5em;
+  width: 95px;
+  font-size: 17px;
+  border-width: .1em;
+  border-color: white;
+  background-color: rgba(64, 46, 34, 0.7);
+}
+
+#menu_buttons > button:hover {
+  background-color: rgba(64, 46, 34, 1);
+}
+
+@media(min-width:768px) {
+    #menu_presentation {
+        margin:2.5em 5em;
+
+    }
+    #menu_buttons > a {
+        width:130px;
+        font-size:22px;
+    }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .9);
+  overflow: hidden;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+
+.sidebar-nav {
+  padding: 0 0 0 40px;
+  list-style: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: rgba(255, 255, 255, .5);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav {padding-top: 60px;}
+.sidenav a {font-size: 21px;}
+
+@media (min-width: 768px) {
+  .sidenav {padding-top: 60px;}
+  .sidenav a {font-size: 25px;}
+}
+
+#navright {
+  float: right;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 15px 10px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+#navibar {
+  background-color: transparent;
+  transition: all 0.5s ease;
+  height: 45px;
+}
+
+#navibar.strong {
+  background: radial-gradient(transparent, #402E22);
+  background-color: rgba(120, 86, 64, .99);
+}
+
+@media (min-width: 768px) {
+  #navibar {
+    height: 52px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  #navibar {
+    height: 55px;
+    padding: 0 10px;
+  }
+
+  .navbar-default .navbar-brand{
+    font-size: 20px;
+  }
+}
+
+#my_nav_brand {
+  opacity: 0;
+  color: white;
+  transition: 0.5s;
+}
+
+#my_nav_brand.displayed {
+  opacity: 1;
+}
+
+#food_section {
+max-width: 100%;
+}
+
+.menu-header {
+  text-align: center;
+  font-weight: 500;
+  font-size:30px;
+  font-family: 'Playball';
+  padding-bottom: 2%;
+}
+
+.food-type {
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+  font-family: 'Playball';
+  display: inline;
+  padding-bottom:2%;
+  vertical-align: top;
+  line-height: 28px;
+}
+
+.food-item {
+  padding-bottom: 2%;
+}
+
+.food-name {
+  padding: 0;
+  margin: 0;
+  font-family: 'Khand';
+  display: inline;
+  vertical-align: top;
+  padding-left: 9%;
+  font-size: 20px;
+}
+
+.food-price {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Khand';
+  vertical-align: top;
+  text-align: center;
+  float:right;
+}
+
+.food-description {
+  text-align: justify;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #938372;
+  padding-left:9%;
+  font-size: 15px;
+}
+
+@media(min-width:1200px) {
+    .food-name,.food-description{
+        padding-left: 21%;
+    }
+}
+
+#contact_section {
+  background-color: #785640;
+}
+
+.contact-icons {
+  text-align: center;
+  margin-bottom: 3%;
+  letter-spacing: 0.4em;
+  margin-top: 6%;
+}
+
+.contact-box {
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 6%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+}
+
+.separation-line {
+  border-left: solid 1px #FFF;
+  display: inline;
+  margin-right: 0.6em;
+}
+
+.fa-facebook-square, .fa-instagram,
+.fa-envelope, .fa-smile-o,
+.fa-facebook-square:visited, .fa-instagram:visited,
+.fa-envelope:visited, .fa-smile-o:visited,
+.fa-facebook-square:link, .fa-instagram:link,
+.fa-envelope:link, .fa-smile-o:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.fa-facebook-square:hover, .fa-instagram:hover,
+.fa-envelope:hover, .fa-smile-o:hover {
+  text-decoration: none;
+  color: #402E22;
+}
+
+@media(max-width:767px) {
+  .contact-address, .contact-address-name,
+  .contact-phone {
+    display: block;
+ }
+
+  .separation-line {
+    display: none;
+  }
+
+  .contact-box {
+    letter-spacing: 0.15em;
+  }
+}
+
+@media(min-width:768px) {
+  .contact-address, .contact-address-name,
+  .contact-phone {
+    display: inline;
+  }
+}
+
+@media(min-width:992px) {
+  .contact-icons {
+    margin-right: 0;
+  }
+
+  .contact-box {
+    margin-right: 0;
+    letter-spacing: 0.2em;
+  }
+}
+
+.up-arrow {
+  margin-top: 1.2em;
+  font-size: 2em;
+  border-color:transparent;
+  background-color: transparent;
+}
+
+.up-arrow:hover, .up-arrow:focus, .up-arrow:onclick {
+  text-decoration: none;
+  color: transparent;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#wine_arrow:active, #wine_arrow:hover, #cocktail_arrow:active, #cocktail_arrow:hover, #food_arrow:active, #food_arrow:hover {
+  text-decoration: none;
+  color:transparent;
+  border-color:transparent;
+  background-color:transparent;
+}
+
+.glyphicon-menu-up {
+  color:#785640;
+}
+
+.address-map-link, .address-map-link:hover,
+.address-map-link:link, .address-map-link:visited {
+  text-decoration: none;
+  color: inherit;
+}

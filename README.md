@@ -4,8 +4,6 @@
 
 > [Spise/Bar20](http://sb20.dk/) restaurant website with a wood theme flavour
 
-* Have a look at http://petrub.com/spise-bar20/
-
 * The website is also live on restaurant's domain at http://sb20.dk/
 
 # Features
